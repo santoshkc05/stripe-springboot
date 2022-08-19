@@ -1,13 +1,30 @@
-# Sample Stripe Application
-This is the sample SpringBoot REST API application for stripe integrations.
+# IOS Banking Backend
+This is the sample SpringBoot application showcasing stripe and firebase integration.
 
-### Install using docker
-1. Build and push the image to docker registry
+## Installation
 
-   `./mvnw compile jib:build -Djib.to.auth.username=<your_dockerhub_username> -Djib.to.auth.password=<your_dockerhub_password>
-   `
+1. Install the [docker](https://docs.docker.com/get-docker/) in your machine.
 
+2. Build and push the image to docker registry
 
-2. Run the image
+```bash 
+ ./mvnw compile jib:build -Djib.to.auth.username=<your_dockerhub_username> -Djib.to.auth.password=<your_dockerhub_password>
+```
 
-   `docker run -e STRIPE_API_KEY=<your_stripe_api_key> -p 8080:8080 santoshkc/stripe-rest`
+3. Run the image
+
+```bash 
+docker run -e STRIPE_API_KEY=<your_stripe_api_key> -p 8080:8080 <your_dockerhub_username>/stripe-rest
+```
+
+## Features
+
+- Create Payment Intent
+- Create OffSession Payment Intent
+- List Payment Methods
+- Token authentication
+
+## TODO
+
+- Write Unit Tests
+- Feature enhancements
