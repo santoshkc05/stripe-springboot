@@ -1,5 +1,5 @@
 # IOS Banking Backend
-This is the sample SpringBoot application showcasing stripe and firebase integration.
+This is the sample SpringBoot application showcasing stripe and firebase integration. This is backend application build for [IOS project](https://github.com/santoshkc05/iOSBanking).
 
 ## Installation
 
